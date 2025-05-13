@@ -1,0 +1,45 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "build/css/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables",
+          "options": {
+            "showFileHeader": false,
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "_primitives.scss",
+          "filter": "isColor",
+          "format": "scss/variables",
+          "options": {
+            "showFileHeader": false,
+            "outputReferences": false,
+            "themeable": false
+          }
+        },
+        {
+          "destination": "_semantic.scss",
+          "filter": "isColor",
+          "format": "scss/variables-with-comments",
+          "options": {
+            "showFileHeader": false,
+            "outputReferences": true,
+            "themeable": true
+          }
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,66 @@
+
+// ------------------------------
+// Content Tokens
+// ------------------------------
+$content-neutral-default: $neutral-800;
+$content-neutral-muted: $neutral-600;
+$content-neutral-disabled: $neutral-400;
+$content-neutral-on-surface: $neutral-700;
+$content-colorful-default-brand: $brand-700;
+$content-neutral-disabled-on-surface: $neutral-500;
+$content-colorful-default-sage: $accent-sage-700;
+$content-colorful-default-desert: $accent-desert-700;
+$content-colorful-default-thistle: $accent-thistle-700;
+$content-colorful-default-periwinkle: $accent-periwinkle-700;
+$content-colorful-default-mist: $accent-mist-700;
+$content-utility-danger-default: $utility-red-700;
+$content-utility-warning-default: $utility-yellow-700;
+$content-utility-success-default: $utility-green-700;
+
+// ------------------------------
+// Background Tokens
+// ------------------------------
+$background-neutral-default: $neutral-white;
+$background-button-primary-default: $neutral-800;
+$background-colorful-default-brand: $brand-200;
+$background-neutral-secondary: $neutral-100;
+$background-neutral-tertiary: $neutral-200;
+$background-neutral-hover: $neutral-300;
+$background-button-primary-hover: $neutral-700;
+$background-button-primary-pressed: $neutral-700;
+$background-button-secondary-default: $neutral-200;
+$background-button-secondary-hover: $neutral-300;
+$background-button-secondary-pressed: $neutral-300;
+$background-button-danger-default: $utility-red-200;
+$background-button-danger-hover: $utility-red-300;
+$background-button-danger-pressed: $utility-red-300;
+$background-colorful-inverse-brand: $brand-600;
+$background-neutral-inverse: $neutral-800;
+$background-utility-success-brand: $utility-green-200;
+$background-utility-warning-brand: $utility-yellow-200;
+$background-utility-danger-brand: $utility-red-200;
+$background-colorful-default-sage: $accent-sage-200;
+$background-colorful-default-desert: $accent-desert-200;
+$background-colorful-default-thistle: $accent-thistle-200;
+$background-colorful-default-periwinkle: $accent-periwinkle-200;
+$background-colorful-default-mist: $accent-mist-200;
+$background-colorful-inverse-sage: $accent-sage-600;
+$background-colorful-inverse-desert: $accent-desert-600;
+$background-colorful-inverse-thistle: $accent-thistle-600;
+$background-colorful-inverse-periwinkle: $accent-periwinkle-600;
+$background-colorful-inverse-mist: $accent-mist-600;
+
+// ------------------------------
+// Border Tokens
+// ------------------------------
+$border-default: $neutral-200;
+$border-input-default: $neutral-500;
+$border-input-selected: $brand-700;
+$border-input-assistive: $brand-200;
+$border-input-danger: $utility-red-600;
+$border-input-muted: $neutral-300;
+
+// ------------------------------
+// Overlay Tokens
+// ------------------------------
+$overlay-Primary: #ffffff;

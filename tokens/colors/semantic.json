@@ -1,0 +1,252 @@
+{
+  "color": {
+    "content": {
+      "neutral": {
+        "default": {
+          "value": "{color.neutral.800.value}",
+          "comment": "Default color used for texts and icons"
+        },
+        "muted": {
+          "value": "{color.neutral.600.value}",
+          "comment": "Muted color is used for texts and icons that need to be a bit pushed back"
+        },
+        "disabled": {
+          "value": "{color.neutral.400.value}",
+          "comment": "Disabled color for texts and icons"
+        },
+        "on-surface": {
+          "value": "{color.neutral.700.value}",
+          "comment": "On surface color that is used for texts and icons on 200 surfaces"
+        },
+        "disabled-on-surface": {
+          "value": "{color.neutral.500.value}",
+          "comment": "Disabled color for texts and icons on surfaces"
+        }
+      },
+      "colorful": {
+        "default": {
+          "brand": {
+            "value": "{color.brand.700.value}",
+            "comment": "Default brand color for text"
+          },
+          "sage": {
+            "value": "{color.accent.sage.700.value}",
+            "comment": "Default sage accent color for text"
+          },
+          "desert": {
+            "value": "{color.accent.desert.700.value}",
+            "comment": "Default desert accent color for text"
+          },
+          "thistle": {
+            "value": "{color.accent.thistle.700.value}",
+            "comment": "Default thistle accent color for text"
+          },
+          "periwinkle": {
+            "value": "{color.accent.periwinkle.700.value}",
+            "comment": "Default periwinkle accent color for text"
+          },
+          "mist": {
+            "value": "{color.accent.mist.700.value}",
+            "comment": "Default mist accent color for text"
+          }
+        }
+      },
+      "utility": {
+        "danger": {
+          "default": {
+            "value": "{color.utility.red.700.value}",
+            "comment": "Default danger color for text"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.utility.yellow.700.value}",
+            "comment": "Default warning color for text"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.utility.green.700.value}",
+            "comment": "Default success color for text"
+          }
+        }
+      }
+    },
+    "background": {
+      "neutral": {
+        "default": {
+          "value": "{color.neutral.white.value}",
+          "comment": "Default background color"
+        },
+        "secondary": {
+          "value": "{color.neutral.100.value}",
+          "comment": "Secondary background color"
+        },
+        "tertiary": {
+          "value": "{color.neutral.200.value}",
+          "comment": "Tertiary background color"
+        },
+        "hover": {
+          "value": "{color.neutral.300.value}",
+          "comment": "Hover background color"
+        },
+        "inverse": {
+          "value": "{color.neutral.800.value}",
+          "comment": "Inverse background color"
+        }
+      },
+      "button": {
+        "primary": {
+          "default": {
+            "value": "{color.neutral.800.value}",
+            "comment": "Primary button default background"
+          },
+          "hover": {
+            "value": "{color.neutral.700.value}",
+            "comment": "Primary button hover background"
+          },
+          "pressed": {
+            "value": "{color.neutral.700.value}",
+            "comment": "Primary button pressed background"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.neutral.200.value}",
+            "comment": "Secondary button default background"
+          },
+          "hover": {
+            "value": "{color.neutral.300.value}",
+            "comment": "Secondary button hover background"
+          },
+          "pressed": {
+            "value": "{color.neutral.300.value}",
+            "comment": "Secondary button pressed background"
+          }
+        },
+        "danger": {
+          "default": {
+            "value": "{color.utility.red.200.value}",
+            "comment": "Danger button default background"
+          },
+          "hover": {
+            "value": "{color.utility.red.300.value}",
+            "comment": "Danger button hover background"
+          },
+          "pressed": {
+            "value": "{color.utility.red.300.value}",
+            "comment": "Danger button pressed background"
+          }
+        }
+      },
+      "colorful": {
+        "default": {
+          "brand": {
+            "value": "{color.brand.200.value}",
+            "comment": "Default brand background color"
+          },
+          "sage": {
+            "value": "{color.accent.sage.200.value}",
+            "comment": "Default sage background color"
+          },
+          "desert": {
+            "value": "{color.accent.desert.200.value}",
+            "comment": "Default desert background color"
+          },
+          "thistle": {
+            "value": "{color.accent.thistle.200.value}",
+            "comment": "Default thistle background color"
+          },
+          "periwinkle": {
+            "value": "{color.accent.periwinkle.200.value}",
+            "comment": "Default periwinkle background color"
+          },
+          "mist": {
+            "value": "{color.accent.mist.200.value}",
+            "comment": "Default mist background color"
+          }
+        },
+        "inverse": {
+          "brand": {
+            "value": "{color.brand.600.value}",
+            "comment": "Inverse brand background color"
+          },
+          "sage": {
+            "value": "{color.accent.sage.600.value}",
+            "comment": "Inverse sage background color"
+          },
+          "desert": {
+            "value": "{color.accent.desert.600.value}",
+            "comment": "Inverse desert background color"
+          },
+          "thistle": {
+            "value": "{color.accent.thistle.600.value}",
+            "comment": "Inverse thistle background color"
+          },
+          "periwinkle": {
+            "value": "{color.accent.periwinkle.600.value}",
+            "comment": "Inverse periwinkle background color"
+          },
+          "mist": {
+            "value": "{color.accent.mist.600.value}",
+            "comment": "Inverse mist background color"
+          }
+        }
+      },
+      "utility": {
+        "success": {
+          "brand": {
+            "value": "{color.utility.green.200.value}",
+            "comment": "Success utility background"
+          }
+        },
+        "warning": {
+          "brand": {
+            "value": "{color.utility.yellow.200.value}",
+            "comment": "Warning utility background"
+          }
+        },
+        "danger": {
+          "brand": {
+            "value": "{color.utility.red.200.value}",
+            "comment": "Danger utility background"
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "value": "{color.neutral.200.value}",
+        "comment": "Default border color"
+      },
+      "input": {
+        "default": {
+          "value": "{color.neutral.500.value}",
+          "comment": "Default input border color"
+        },
+        "selected": {
+          "value": "{color.brand.700.value}",
+          "comment": "Selected input border color"
+        },
+        "assistive": {
+          "value": "{color.brand.200.value}",
+          "comment": "Assistive input border color"
+        },
+        "danger": {
+          "value": "{color.utility.red.600.value}",
+          "comment": "Danger input border color"
+        },
+        "muted": {
+          "value": "{color.neutral.300.value}",
+          "comment": "Muted input border color"
+        }
+      }
+    },
+    "overlay": {
+      "primary": {
+        "value": "#FFFFFF",
+        "comment": "Primary overlay color"
+      }
+    }
+  }
+} 

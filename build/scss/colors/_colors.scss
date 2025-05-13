@@ -1,0 +1,157 @@
+@import "./primitives";
+
+// ------------------------------
+// Content Tokens
+// ------------------------------
+// Default color used for texts and icons
+$content-neutral-default: $neutral-800;
+
+// Muted color is used for texts and icons that need to be a bit pushed back
+$content-neutral-muted: $neutral-600;
+
+// Disabled color for texts and icons
+$content-neutral-disabled: $neutral-400;
+
+// On surface color that is used for texts and icons on 200 surfaces
+$content-neutral-on-surface: $neutral-700;
+
+// Disabled color for texts and icons on surfaces
+$content-neutral-disabled-on-surface: $neutral-500;
+
+// Default brand color for text
+$content-colorful-default-brand: $brand-700;
+
+// Default sage accent color for text
+$content-colorful-default-sage: $accent-sage-700;
+
+// Default desert accent color for text
+$content-colorful-default-desert: $accent-desert-700;
+
+// Default thistle accent color for text
+$content-colorful-default-thistle: $accent-thistle-700;
+
+// Default periwinkle accent color for text
+$content-colorful-default-periwinkle: $accent-periwinkle-700;
+
+// Default mist accent color for text
+$content-colorful-default-mist: $accent-mist-700;
+
+// Default danger color for text
+$content-utility-danger-default: $utility-red-700;
+
+// Default warning color for text
+$content-utility-warning-default: $utility-yellow-700;
+
+// Default success color for text
+$content-utility-success-default: $utility-green-700;
+
+// ------------------------------
+// Background Tokens
+// ------------------------------
+// Default background color
+$background-neutral-default: $neutral-white;
+
+// Secondary background color
+$background-neutral-secondary: $neutral-100;
+
+// Tertiary background color
+$background-neutral-tertiary: $neutral-200;
+
+// Hover background color
+$background-neutral-hover: $neutral-300;
+
+// Inverse background color
+$background-neutral-inverse: $neutral-800;
+
+// Primary button default background
+$background-button-primary-default: $neutral-800;
+
+// Primary button hover background
+$background-button-primary-hover: $neutral-700;
+
+// Primary button pressed background
+$background-button-primary-pressed: $neutral-700;
+
+// Secondary button default background
+$background-button-secondary-default: $neutral-200;
+
+// Secondary button hover background
+$background-button-secondary-hover: $neutral-300;
+
+// Secondary button pressed background
+$background-button-secondary-pressed: $neutral-300;
+
+// Danger button default background
+$background-button-danger-default: $utility-red-200;
+
+// Danger button hover background
+$background-button-danger-hover: $utility-red-300;
+
+// Danger button pressed background
+$background-button-danger-pressed: $utility-red-300;
+
+// Default brand background color
+$background-colorful-default-brand: $brand-200;
+
+// Default sage background color
+$background-colorful-default-sage: $accent-sage-200;
+
+// Default desert background color
+$background-colorful-default-desert: $accent-desert-200;
+
+// Default thistle background color
+$background-colorful-default-thistle: $accent-thistle-200;
+
+// Default periwinkle background color
+$background-colorful-default-periwinkle: $accent-periwinkle-200;
+
+// Default mist background color
+$background-colorful-default-mist: $accent-mist-200;
+
+// Inverse brand background color
+$background-colorful-inverse-brand: $brand-600;
+
+// Inverse sage background color
+$background-colorful-inverse-sage: $accent-sage-600;
+
+// Inverse desert background color
+$background-colorful-inverse-desert: $accent-desert-600;
+
+// Inverse thistle background color
+$background-colorful-inverse-thistle: $accent-thistle-600;
+
+// Inverse periwinkle background color
+$background-colorful-inverse-periwinkle: $accent-periwinkle-600;
+
+// Inverse mist background color
+$background-colorful-inverse-mist: $accent-mist-600;
+
+// Success utility background
+$background-utility-success-brand: $utility-green-200;
+
+// Warning utility background
+$background-utility-warning-brand: $utility-yellow-200;
+
+// Danger utility background
+$background-utility-danger-brand: $utility-red-200;
+
+// ------------------------------
+// Border Tokens
+// ------------------------------
+// Default border color
+$border-default: $neutral-200;
+
+// Default input border color
+$border-input-default: $neutral-500;
+
+// Selected input border color
+$border-input-selected: $brand-700;
+
+// Assistive input border color
+$border-input-assistive: $brand-200;
+
+// Danger input border color
+$border-input-danger: $utility-red-600;
+
+// Muted input border color
+$border-input-muted: $neutral-300;
