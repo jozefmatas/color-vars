@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Tokens</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .color-section {
+            margin-bottom: 3rem;
+        }
+
+        .color-section h2 {
+            margin-bottom: 1rem;
+            color: #666;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .color-swatch {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .color-preview {
+            width: 100%;
+            height: 100px;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .color-info {
+            font-size: 14px;
+        }
+
+        .color-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-value {
+            font-family: monospace;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Token System</h1>
+
+    <!-- Neutral Colors -->
+    <div class="color-section">
+        <h2>Neutral Colors</h2>
+        <div class="color-grid">
+            <div class="color-swatch">
+                <div class="color-preview" style="background-color: #FFFFFF;"></div>
+                <div class="color-info">
+                    <div class="color-name">$neutral-white</div>
+                    <div class="color-value">#FFFFFF</div>
+                </div>
+            </div>
+            <!-- Add all neutral colors here -->
+        </div>
+    </div>
+
+    <!-- Brand Colors -->
+    <div class="color-section">
+        <h2>Brand Colors</h2>
+        <div class="color-grid">
+            <!-- Add all brand colors here -->
+        </div>
+    </div>
+
+    <!-- Accent Colors -->
+    <div class="color-section">
+        <h2>Accent Colors - Sage</h2>
+        <div class="color-grid">
+            <!-- Add all sage colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Accent Colors - Desert</h2>
+        <div class="color-grid">
+            <!-- Add all desert colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Accent Colors - Thistle</h2>
+        <div class="color-grid">
+            <!-- Add all thistle colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Accent Colors - Periwinkle</h2>
+        <div class="color-grid">
+            <!-- Add all periwinkle colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Accent Colors - Mist</h2>
+        <div class="color-grid">
+            <!-- Add all mist colors here -->
+        </div>
+    </div>
+
+    <!-- Utility Colors -->
+    <div class="color-section">
+        <h2>Utility Colors - Green</h2>
+        <div class="color-grid">
+            <!-- Add all green colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Utility Colors - Yellow</h2>
+        <div class="color-grid">
+            <!-- Add all yellow colors here -->
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>Utility Colors - Red</h2>
+        <div class="color-grid">
+            <!-- Add all red colors here -->
+        </div>
+    </div>
+
+    <script>
+        // Function to generate color swatches
+        function createColorSwatch(name, value) {
+            return `
+                <div class="color-swatch">
+                    <div class="color-preview" style="background-color: ${value};"></div>
+                    <div class="color-info">
+                        <div class="color-name">${name}</div>
+                        <div class="color-value">${value}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Color definitions from _primitives.scss
+        const colors = {
+            neutral: {
+                'neutral-white': '#FFFFFF',
+                'neutral-100': '#F7F6F5',
+                'neutral-200': '#EDECE8',
+                'neutral-300': '#DCD9D1',
+                'neutral-400': '#CAC5BA',
+                'neutral-500': '#989385',
+                'neutral-600': '#6C6861',
+                'neutral-700': '#4D4A42',
+                'neutral-800': '#21201C'
+            },
+            brand: {
+                'brand-100': '#F3F7F7',
+                'brand-200': '#E6EFE7',
+                'brand-300': '#CEDFDD',
+                'brand-400': '#B5CECC',
+                'brand-500': '#78A6A1',
+                'brand-600': '#507BA7',
+                'brand-700': '#395754',
+                'brand-800': '#172423'
+            },
+            sage: {
+                'sage-100': '#F6F7F3',
+                'sage-200': '#ECEDE7',
+                'sage-300': '#D8DCCE',
+                'sage-400': '#C8CD99',
+                'sage-500': '#97A17C',
+                'sage-600': '#6D7656',
+                'sage-700': '#4D523C',
+                'sage-800': '#20231A'
+            },
+            desert: {
+                'desert-100': '#FBF5EF',
+                'desert-200': '#F7EBDF',
+                'desert-300': '#EFD6BE',
+                'desert-400': '#E6C19D',
+                'desert-500': '#C58E5A',
+                'desert-600': '#8E643C',
+                'desert-700': '#65472A',
+                'desert-800': '#2B1E12'
+            },
+            thistle: {
+                'thistle-100': '#F8F3F5',
+                'thistle-200': '#F0E6E9',
+                'thistle-300': '#DFCDD2',
+                'thistle-400': '#CFB5BC',
+                'thistle-500': '#A37B86',
+                'thistle-600': '#74585F',
+                'thistle-700': '#513D42',
+                'thistle-800': '#221A1C'
+            },
+            periwinkle: {
+                'periwinkle-100': '#F2F4FA',
+                'periwinkle-200': '#E1E5F3',
+                'periwinkle-300': '#C4CBE7',
+                'periwinkle-400': '#A7B2DC',
+                'periwinkle-500': '#7A82A4',
+                'periwinkle-600': '#575D73',
+                'periwinkle-700': '#3E4251',
+                'periwinkle-800': '#1A1C23'
+            },
+            mist: {
+                'mist-100': '#F0F6F9',
+                'mist-200': '#E2EDF3',
+                'mist-300': '#C5DBE8',
+                'mist-400': '#A8CADD',
+                'mist-500': '#78955A',
+                'mist-600': '#556A77',
+                'mist-700': '#3B4B54',
+                'mist-800': '#192024'
+            },
+            green: {
+                'green-100': '#F5F8F2',
+                'green-200': '#EBF1E5',
+                'green-300': '#D6E2CA',
+                'green-400': '#C2D4AF',
+                'green-500': '#90B16F',
+                'green-600': '#668547',
+                'green-700': '#485E32',
+                'green-800': '#1D2714'
+            },
+            yellow: {
+                'yellow-100': '#FAF7F0',
+                'yellow-200': '#F5EFE0',
+                'yellow-300': '#EADEC2',
+                'yellow-400': '#E0CEA3',
+                'yellow-500': '#C6A457',
+                'yellow-600': '#B2851C',
+                'yellow-700': '#7C5C13',
+                'yellow-800': '#352808'
+            },
+            red: {
+                'red-100': '#FAF2EF',
+                'red-200': '#F5E4E0',
+                'red-300': '#ECC9C0',
+                'red-400': '#E2ADA0',
+                'red-500': '#CB6C54',
+                'red-600': '#9D442D',
+                'red-700': '#6F3020',
+                'red-800': '#2E130D'
+            }
+        };
+
+        // Populate color swatches
+        Object.entries(colors).forEach(([category, categoryColors]) => {
+            const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
+            const sections = Array.from(document.querySelectorAll('.color-section h2'));
+            const section = sections.find(h2 => h2.textContent.toLowerCase().includes(category.toLowerCase()));
+            
+            if (section) {
+                const grid = section.parentElement.querySelector('.color-grid');
+                grid.innerHTML = Object.entries(categoryColors)
+                    .map(([name, value]) => createColorSwatch(name, value))
+                    .join('');
+            }
+        });
+    </script>
+</body>
+</html> 
