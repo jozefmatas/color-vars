@@ -1,84 +1,120 @@
 // ------------------------------
 // Neutral Colors
 // ------------------------------
-$neutral-white: #ffffff;
-$neutral-100: #f7f7f6;
-$neutral-200: #edede8;
-$neutral-300: #dcdcd1;
-$neutral-400: #caca9a;
-$neutral-500: #989885;
-$neutral-600: #6c6861;
-$neutral-700: #4d4a42;
-$neutral-800: #211f1c;
+$neutral-white: #FFFFFF;
+$neutral-100: #F7F6F5;
+$neutral-200: #EDECE8;
+$neutral-300: #DCD9D1;
+$neutral-400: #CAC5BA;
+$neutral-500: #989385;
+$neutral-600: #6C6861;
+$neutral-700: #4D4A42;
+$neutral-800: #21201C;
 
 // ------------------------------
 // Brand Colors
 // ------------------------------
-$brand-100: #f3f8f7;
-$brand-200: #e6efee;
-$brand-300: #cedfdd;
-$brand-400: #b5cecc;
-$brand-500: #78a6a1;
-$brand-600: #507b76;
-$brand-700: #395757;
+$brand-100: #F3F7F7;
+$brand-200: #E6EFE7;
+$brand-300: #CEDFDD;
+$brand-400: #B5CECC;
+$brand-500: #78A6A1;
+$brand-600: #507BA7;
+$brand-700: #395754;
 $brand-800: #172423;
 
 // ------------------------------
-// Accent Sage Colors
+// Accent Colors - Sage
 // ------------------------------
-$accent-sage-100: #f6f7f4;
-$accent-sage-200: #ecefea;
-$accent-sage-300: #d8dcce;
-$accent-sage-400: #c8cdb9;
-$accent-sage-500: #97a17d;
-$accent-sage-600: #6d765c;
-$accent-sage-700: #4d533c;
-$accent-sage-800: #202319;
+$sage-100: #F6F7F3;
+$sage-200: #ECEDE7;
+$sage-300: #D8DCCE;
+$sage-400: #C8CD99;
+$sage-500: #97A17C;
+$sage-600: #6D7656;
+$sage-700: #4D523C;
+$sage-800: #20231A;
 
 // ------------------------------
-// Accent Desert Colors
+// Accent Colors - Desert
 // ------------------------------
-$accent-desert-100: #fbf5ef;
-$accent-desert-200: #f7ebdf;
-$accent-desert-300: #efd6be;
-$accent-desert-400: #e7c19e;
-$accent-desert-500: #c58e5a;
-$accent-desert-600: #8e643c;
-$accent-desert-700: #65472a;
-$accent-desert-800: #2b1c12;
+$desert-100: #FBF5EF;
+$desert-200: #F7EBDF;
+$desert-300: #EFD6BE;
+$desert-400: #E6C19D;
+$desert-500: #C58E5A;
+$desert-600: #8E643C;
+$desert-700: #65472A;
+$desert-800: #2B1E12;
 
 // ------------------------------
-// Accent Thistle Colors
+// Accent Colors - Thistle
 // ------------------------------
-$accent-thistle-100: #f8f4f5;
-$accent-thistle-200: #f0e6e9;
-$accent-thistle-300: #dfcdd2;
-$accent-thistle-400: #cfb4bb;
-$accent-thistle-500: #a3858d;
-$accent-thistle-600: #745860;
-$accent-thistle-700: #513d42;
-$accent-thistle-800: #221c1c;
+$thistle-100: #F8F3F5;
+$thistle-200: #F0E6E9;
+$thistle-300: #DFCDD2;
+$thistle-400: #CFB5BC;
+$thistle-500: #A37B86;
+$thistle-600: #74585F;
+$thistle-700: #513D42;
+$thistle-800: #221A1C;
 
 // ------------------------------
-// Accent Periwinkle Colors
+// Accent Colors - Periwinkle
 // ------------------------------
-$accent-periwinkle-100: #f2f4fa;
-$accent-periwinkle-200: #e1e5f3;
-$accent-periwinkle-300: #c4cbe7;
-$accent-periwinkle-400: #a7b2db;
-$accent-periwinkle-500: #7a82b4;
-$accent-periwinkle-600: #575c73;
-$accent-periwinkle-700: #3e4251;
-$accent-periwinkle-800: #1a1c23;
+$periwinkle-100: #F2F4FA;
+$periwinkle-200: #E1E5F3;
+$periwinkle-300: #C4CBE7;
+$periwinkle-400: #A7B2DC;
+$periwinkle-500: #7A82A4;
+$periwinkle-600: #575D73;
+$periwinkle-700: #3E4251;
+$periwinkle-800: #1A1C23;
 
 // ------------------------------
-// Accent Mist Colors
+// Accent Colors - Mist
 // ------------------------------
-$accent-mist-100: #f0f6f9;
-$accent-mist-200: #e2edf3;
-$accent-mist-300: #c5dbe8;
-$accent-mist-400: #a8c9dd;
-$accent-mist-500: #78a6b6;
-$accent-mist-600: #556a73;
-$accent-mist-700: #3b4b51;
-$accent-mist-800: #192023;
+$mist-100: #F0F6F9;
+$mist-200: #E2EDF3;
+$mist-300: #C5DBE8;
+$mist-400: #A8CADD;
+$mist-500: #78955A;
+$mist-600: #556A77;
+$mist-700: #3B4B54;
+$mist-800: #192024;
+
+// ------------------------------
+// Utility Colors - Green
+// ------------------------------
+$green-100: #F5F8F2;
+$green-200: #EBF1E5;
+$green-300: #D6E2CA;
+$green-400: #C2D4AF;
+$green-500: #90B16F;
+$green-600: #668547;
+$green-700: #485E32;
+$green-800: #1D2714;
+
+// ------------------------------
+// Utility Colors - Yellow
+// ------------------------------
+$yellow-100: #FAF7F0;
+$yellow-200: #F5EFE0;
+$yellow-300: #EADEC2;
+$yellow-400: #E0CEA3;
+$yellow-500: #C6A457;
+$yellow-600: #B2851C;
+$yellow-700: #7C5C13;
+$yellow-800: #352808;
+
+// ------------------------------
+// Utility Colors - Red
+// ------------------------------
+$red-100: #FAF2EF;
+$red-200: #F5E4E0;
+$red-300: #ECC9C0;
+$red-400: #E2ADA0;
+$red-500: #CB6C54;
+$red-600: #9D442D;
+$red-700: #6F3020;
+$red-800: #2E130D;
