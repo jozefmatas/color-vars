@@ -30,6 +30,14 @@ StyleDictionary.registerFilter({
   },
 });
 
+// Register a custom filter for gradients
+StyleDictionary.registerFilter({
+  name: "isGradient",
+  matcher: function (token) {
+    return token.type === "gradient" || token.path[0] === "gradient";
+  },
+});
+
 // Helper function to remove 'color-' prefix and format path
 function formatVariableName(path) {
   // Join the path parts with '-' but skip the first part if it's 'color'
@@ -160,6 +168,50 @@ StyleDictionary.registerFormat({
   },
 });
 
+// Custom format for gradient variables
+StyleDictionary.registerFormat({
+  name: "scss/variables-gradient",
+  formatter: function ({ dictionary }) {
+    const gradients = dictionary.allTokens;
+
+    // Start with the import statement
+    let output = '@import "./primitives";\n\n';
+
+    // Add a section comment
+    output += "// ------------------------------\n";
+    output += "// Gradient Tokens\n";
+    output += "// ------------------------------\n";
+
+    // Helper function to find primitive variable for a hex color
+    function findPrimitiveVariable(hex) {
+      // Create a map of hex values to variable names
+      const colorMap = {
+        "#ebf1e5": "$utility-green-200",
+        "#f5efe0": "$utility-yellow-200",
+        "#f5e4e0": "$utility-red-200",
+        "#ffffff": "$neutral-white",
+      };
+
+      return colorMap[hex.toLowerCase()] || hex;
+    }
+
+    // Generate SCSS with variable references
+    output += gradients
+      .map((token) => {
+        const name = `$${formatVariableName(token.path)}`;
+        // Replace hex values with SCSS variable references
+        const value = token.value.replace(
+          /#[a-fA-F0-9]{6}/gi,
+          findPrimitiveVariable
+        );
+        return `${name}: ${value};`;
+      })
+      .join("\n\n");
+
+    return output;
+  },
+});
+
 const sd = StyleDictionary.extend({
   source: ["tokens/**/*.json"],
   platforms: {
@@ -199,6 +251,16 @@ const sd = StyleDictionary.extend({
             showFileHeader: false,
             outputReferences: true,
             themeable: true,
+          },
+        },
+        {
+          destination: "_gradients.scss",
+          filter: "isGradient",
+          format: "scss/variables-gradient",
+          options: {
+            showFileHeader: false,
+            outputReferences: false,
+            themeable: false,
           },
         },
       ],

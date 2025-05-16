@@ -1,0 +1,15 @@
+{
+  "gradient": {
+    "body": {
+      "green": {
+        "value": "linear-gradient(180deg, {color.background.gradient.green.start.value} 0%, {color.background.gradient.green.end.value} 100%)"
+      },
+      "yellow": {
+        "value": "linear-gradient(180deg, {color.background.gradient.yellow.start.value} 0%, {color.background.gradient.yellow.end.value} 100%)"
+      },
+      "red": {
+        "value": "linear-gradient(180deg, {color.background.gradient.red.start.value} 0%, {color.background.gradient.red.end.value} 100%)"
+      }
+    }
+  }
+}

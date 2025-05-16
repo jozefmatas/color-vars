@@ -4,10 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js",
+    "transform-tokens": "node scripts/transformFigmaTokens.js",
+    "build": "npm run transform-tokens && node build.js",
     "generate-colors": "node scripts/generateColorExports.js",
-    "storybook": "npm run generate-colors && storybook dev -p 6006",
-    "build-storybook": "npm run generate-colors && storybook build"
+    "storybook": "npm run build && npm run generate-colors && storybook dev -p 6006",
+    "build-storybook": "npm run build && npm run generate-colors && storybook build"
   },
   "keywords": [],
   "author": "",

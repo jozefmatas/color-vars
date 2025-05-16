@@ -212,6 +212,38 @@
             "comment": "Danger utility background"
           }
         }
+      },
+      "gradient": {
+        "green": {
+          "start": {
+            "value": "{color.utility.green.200.value}",
+            "comment": "Start color for green gradient"
+          },
+          "end": {
+            "value": "{color.neutral.white.value}",
+            "comment": "End color for green gradient"
+          }
+        },
+        "yellow": {
+          "start": {
+            "value": "{color.utility.yellow.200.value}",
+            "comment": "Start color for yellow gradient"
+          },
+          "end": {
+            "value": "{color.neutral.white.value}",
+            "comment": "End color for yellow gradient"
+          }
+        },
+        "red": {
+          "start": {
+            "value": "{color.utility.red.200.value}",
+            "comment": "Start color for red gradient"
+          },
+          "end": {
+            "value": "{color.neutral.white.value}",
+            "comment": "End color for red gradient"
+          }
+        }
       }
     },
     "border": {
@@ -249,4 +281,4 @@
       }
     }
   }
-} 
+}

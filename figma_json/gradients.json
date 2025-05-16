@@ -1,0 +1,10 @@
+ {"Gradient/Body/Green": {
+    "background": "linear-gradient(180deg, #ebf1e5 0%, #ffffff 100%)"
+  },
+  "Gradient/Body/Yellow": {
+    "background": "linear-gradient(180deg, #f5efe0 0%, #ffffff 100%)"
+  },
+  "Gradient/Body/Red": {
+    "background": "linear-gradient(180deg, #f5e4e0 0%, #ffffff 100%)"
+  }
+} 
