@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "generate-colors": "node scripts/generateColorExports.js",
+    "storybook": "npm run generate-colors && storybook dev -p 6006",
+    "build-storybook": "npm run generate-colors && storybook build"
   },
   "keywords": [],
   "author": "",
