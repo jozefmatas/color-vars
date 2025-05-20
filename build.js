@@ -46,6 +46,18 @@ StyleDictionary.registerFilter({
   },
 });
 
+// Custom filter for CSS primitive colors (for CSS variables only)
+StyleDictionary.registerFilter({
+  name: "isCssPrimitiveColor",
+  matcher: function (token) {
+    return (
+      (token.type === "color" || token.path[0] === "color") &&
+      typeof token.value === "string" &&
+      token.value.startsWith("#")
+    );
+  },
+});
+
 // Helper function to remove 'color-' prefix and format path
 function formatVariableName(path) {
   // Join the path parts with '-' but skip the first part if it's 'color'
@@ -303,38 +315,39 @@ StyleDictionary.registerFormat({
   },
 });
 
-// Update the Style Dictionary configuration
-const StyleDictionaryExtended = StyleDictionary.extend({
-  source: ["tokens/**/*.json"],
-  platforms: {
-    scss: {
-      transforms: ["attribute/cti", "name/cti/kebab"],
-      buildPath: "build/scss/",
-      files: [
-        {
-          destination: "typography/_typography.scss",
-          format: "scss/typography-mixins",
-          filter: "isTypography",
-        },
-        {
-          destination: "colors/_semantic.scss",
-          format: "scss/variables-with-comments",
-          filter: "isSemanticColor",
-        },
-        {
-          destination: "colors/_primitives.scss",
-          format: "scss/variables-primitive",
-          filter: "isPrimitiveColor",
-        },
-        {
-          destination: "gradients/_gradients.scss",
-          format: "scss/variables-gradient",
-          filter: "isGradient",
-        },
-      ],
-    },
+// Custom format for CSS variables with only string hex values
+StyleDictionary.registerFormat({
+  name: "css/variables-hex-only",
+  formatter: function ({ dictionary }) {
+    return `:root {\n${dictionary.allTokens
+      .filter(
+        (token) =>
+          typeof token.value === "string" && token.value.startsWith("#")
+      )
+      .map((token) => `  --${token.name}: ${token.value};`)
+      .join("\n")}\n}`;
   },
 });
 
-// Run the build
+// Update the Style Dictionary configuration
+const StyleDictionaryExtended = StyleDictionary.extend(
+  require("./config.json")
+);
+
+// (Optional: remove the extra destinations for _primitives.scss and _semantic.scss if you want to avoid duplication.)
+// (If you're using a single config (config.json) and your SCSS platform is already set to output under build/scss/colors, then you can remove the extra destinations from your SCSS platform config.)
+
+// For example, if your SCSS platform (in config.json) is defined as:
+// "scss": {
+//   "transformGroup": "scss",
+//   "buildPath": "build/scss/",
+//   "files": [
+//     { "destination": "colors/_primitives.scss", "filter": "isPrimitiveColor", "format": "scss/variables-primitive", "options": { "showFileHeader": false, "outputReferences": false, "themeable": false } },
+//     { "destination": "colors/_semantic.scss", "filter": "isSemanticColor", "format": "scss/variables-with-comments", "options": { "showFileHeader": false, "outputReferences": true, "themeable": true } },
+//     { "destination": "typography/_typography.scss", "filter": "isTypography", "format": "scss/typography-mixins" },
+//     { "destination": "gradients/_gradients.scss", "filter": "isGradient", "format": "scss/variables-gradient" }
+//   ]
+// }
+// then you're already set. (If you're using a separate config or extra destinations, remove them.)
+
 StyleDictionaryExtended.buildAllPlatforms();

@@ -7,10 +7,11 @@
       "files": [
         {
           "destination": "variables.css",
-          "format": "css/variables",
+          "format": "css/variables-hex-only",
+          "filter": "isCssPrimitiveColor",
           "options": {
             "showFileHeader": false,
-            "outputReferences": true
+            "outputReferences": false
           }
         }
       ]
@@ -20,24 +21,26 @@
       "buildPath": "build/scss/",
       "files": [
         {
-          "destination": "_primitives.scss",
-          "filter": "isColor",
-          "format": "scss/variables",
-          "options": {
-            "showFileHeader": false,
-            "outputReferences": false,
-            "themeable": false
-          }
+          "destination": "colors/_primitives.scss",
+          "filter": "isPrimitiveColor",
+          "format": "scss/variables-primitive",
+          "options": { "showFileHeader": false, "outputReferences": false, "themeable": false }
         },
         {
-          "destination": "_semantic.scss",
-          "filter": "isColor",
+          "destination": "colors/_semantic.scss",
+          "filter": "isSemanticColor",
           "format": "scss/variables-with-comments",
-          "options": {
-            "showFileHeader": false,
-            "outputReferences": true,
-            "themeable": true
-          }
+          "options": { "showFileHeader": false, "outputReferences": true, "themeable": true }
+        },
+        {
+          "destination": "typography/_typography.scss",
+          "filter": "isTypography",
+          "format": "scss/typography-mixins"
+        },
+        {
+          "destination": "colors/_gradients.scss",
+          "filter": "isGradient",
+          "format": "scss/variables-gradient"
         }
       ]
     }

@@ -1,5 +1,5 @@
 import "../build/scss/colors/_primitives.scss";
-import "../build/scss/colors/_colors.scss";
+import "../build/scss/colors/_semantic.scss";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
