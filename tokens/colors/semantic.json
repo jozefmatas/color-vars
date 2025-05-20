@@ -3,281 +3,208 @@
     "content": {
       "neutral": {
         "default": {
-          "value": "{color.neutral.800.value}",
-          "comment": "Default color used for texts and icons"
+          "value": "{color.neutral.800.value}"
         },
         "muted": {
-          "value": "{color.neutral.600.value}",
-          "comment": "Muted color is used for texts and icons that need to be a bit pushed back"
+          "value": "{color.neutral.600.value}"
         },
         "disabled": {
-          "value": "{color.neutral.400.value}",
-          "comment": "Disabled color for texts and icons"
+          "value": "{color.neutral.400.value}"
         },
-        "on-surface": {
-          "value": "{color.neutral.700.value}",
-          "comment": "On surface color that is used for texts and icons on 200 surfaces"
+        "onSurface": {
+          "value": "{color.neutral.700.value}"
         },
-        "disabled-on-surface": {
-          "value": "{color.neutral.500.value}",
-          "comment": "Disabled color for texts and icons on surfaces"
+        "disabledOnSurface": {
+          "value": "{color.neutral.500.value}"
         }
       },
       "colorful": {
         "default": {
           "brand": {
-            "value": "{color.brand.700.value}",
-            "comment": "Default brand color for text"
+            "value": "{color.brand.700.value}"
           },
           "sage": {
-            "value": "{color.accent.sage.700.value}",
-            "comment": "Default sage accent color for text"
+            "value": "{color.accent.sage.700.value}"
           },
           "desert": {
-            "value": "{color.accent.desert.700.value}",
-            "comment": "Default desert accent color for text"
+            "value": "{color.accent.desert.700.value}"
           },
           "thistle": {
-            "value": "{color.accent.thistle.700.value}",
-            "comment": "Default thistle accent color for text"
+            "value": "{color.accent.thistle.700.value}"
           },
           "periwinkle": {
-            "value": "{color.accent.periwinkle.700.value}",
-            "comment": "Default periwinkle accent color for text"
+            "value": "{color.accent.periwinkle.700.value}"
           },
           "mist": {
-            "value": "{color.accent.mist.700.value}",
-            "comment": "Default mist accent color for text"
+            "value": "{color.accent.mist.700.value}"
           }
         }
       },
       "utility": {
         "danger": {
-          "default": {
-            "value": "{color.utility.red.700.value}",
-            "comment": "Default danger color for text"
-          }
+          "value": "{color.utility.red.700.value}"
         },
         "warning": {
-          "default": {
-            "value": "{color.utility.yellow.700.value}",
-            "comment": "Default warning color for text"
-          }
+          "value": "{color.utility.yellow.700.value}"
         },
         "success": {
-          "default": {
-            "value": "{color.utility.green.700.value}",
-            "comment": "Default success color for text"
-          }
+          "value": "{color.utility.green.700.value}"
         }
       }
     },
     "background": {
       "neutral": {
-        "default": {
-          "value": "{color.neutral.white.value}",
-          "comment": "Default background color"
+        "base": {
+          "value": "{color.neutral.white.value}"
         },
-        "secondary": {
-          "value": "{color.neutral.100.value}",
-          "comment": "Secondary background color"
+        "raised": {
+          "value": "{color.neutral.100.value}"
         },
-        "tertiary": {
-          "value": "{color.neutral.200.value}",
-          "comment": "Tertiary background color"
+        "layer": {
+          "value": "{color.neutral.200.value}"
         },
         "hover": {
-          "value": "{color.neutral.300.value}",
-          "comment": "Hover background color"
+          "value": "{color.neutral.300.value}"
         },
         "inverse": {
-          "value": "{color.neutral.800.value}",
-          "comment": "Inverse background color"
-        }
-      },
-      "button": {
-        "primary": {
-          "default": {
-            "value": "{color.neutral.800.value}",
-            "comment": "Primary button default background"
-          },
-          "hover": {
-            "value": "{color.neutral.700.value}",
-            "comment": "Primary button hover background"
-          },
-          "pressed": {
-            "value": "{color.neutral.700.value}",
-            "comment": "Primary button pressed background"
-          }
-        },
-        "secondary": {
-          "default": {
-            "value": "{color.neutral.200.value}",
-            "comment": "Secondary button default background"
-          },
-          "hover": {
-            "value": "{color.neutral.300.value}",
-            "comment": "Secondary button hover background"
-          },
-          "pressed": {
-            "value": "{color.neutral.300.value}",
-            "comment": "Secondary button pressed background"
-          }
-        },
-        "danger": {
-          "default": {
-            "value": "{color.utility.red.200.value}",
-            "comment": "Danger button default background"
-          },
-          "hover": {
-            "value": "{color.utility.red.300.value}",
-            "comment": "Danger button hover background"
-          },
-          "pressed": {
-            "value": "{color.utility.red.300.value}",
-            "comment": "Danger button pressed background"
-          }
+          "value": "{color.neutral.800.value}"
         }
       },
       "colorful": {
         "default": {
           "brand": {
-            "value": "{color.brand.200.value}",
-            "comment": "Default brand background color"
+            "value": "{color.brand.200.value}"
           },
           "sage": {
-            "value": "{color.accent.sage.200.value}",
-            "comment": "Default sage background color"
+            "value": "{color.accent.sage.200.value}"
           },
           "desert": {
-            "value": "{color.accent.desert.200.value}",
-            "comment": "Default desert background color"
+            "value": "{color.accent.desert.200.value}"
           },
           "thistle": {
-            "value": "{color.accent.thistle.200.value}",
-            "comment": "Default thistle background color"
+            "value": "{color.accent.thistle.200.value}"
           },
           "periwinkle": {
-            "value": "{color.accent.periwinkle.200.value}",
-            "comment": "Default periwinkle background color"
+            "value": "{color.accent.periwinkle.200.value}"
           },
           "mist": {
-            "value": "{color.accent.mist.200.value}",
-            "comment": "Default mist background color"
+            "value": "{color.accent.mist.200.value}"
           }
         },
         "inverse": {
           "brand": {
-            "value": "{color.brand.600.value}",
-            "comment": "Inverse brand background color"
+            "value": "{color.brand.600.value}"
           },
           "sage": {
-            "value": "{color.accent.sage.600.value}",
-            "comment": "Inverse sage background color"
+            "value": "{color.accent.sage.600.value}"
           },
           "desert": {
-            "value": "{color.accent.desert.600.value}",
-            "comment": "Inverse desert background color"
+            "value": "{color.accent.desert.600.value}"
           },
           "thistle": {
-            "value": "{color.accent.thistle.600.value}",
-            "comment": "Inverse thistle background color"
+            "value": "{color.accent.thistle.600.value}"
           },
           "periwinkle": {
-            "value": "{color.accent.periwinkle.600.value}",
-            "comment": "Inverse periwinkle background color"
+            "value": "{color.accent.periwinkle.600.value}"
           },
           "mist": {
-            "value": "{color.accent.mist.600.value}",
-            "comment": "Inverse mist background color"
+            "value": "{color.accent.mist.600.value}"
           }
         }
       },
       "utility": {
         "success": {
-          "brand": {
-            "value": "{color.utility.green.200.value}",
-            "comment": "Success utility background"
-          }
+          "value": "{color.utility.green.200.value}"
         },
         "warning": {
-          "brand": {
-            "value": "{color.utility.yellow.200.value}",
-            "comment": "Warning utility background"
+          "value": "{color.utility.yellow.200.value}"
+        },
+        "danger": {
+          "value": "{color.utility.red.200.value}"
+        }
+      },
+      "button": {
+        "primary": {
+          "default": {
+            "value": "{color.neutral.800.value}"
+          },
+          "hover": {
+            "value": "{color.neutral.700.value}"
+          },
+          "pressed": {
+            "value": "{color.neutral.700.value}"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.neutral.200.value}"
+          },
+          "hover": {
+            "value": "{color.neutral.300.value}"
+          },
+          "pressed": {
+            "value": "{color.neutral.300.value}"
           }
         },
         "danger": {
-          "brand": {
-            "value": "{color.utility.red.200.value}",
-            "comment": "Danger utility background"
+          "default": {
+            "value": "{color.utility.red.200.value}"
+          },
+          "hover": {
+            "value": "{color.utility.red.300.value}"
+          },
+          "pressed": {
+            "value": "{color.utility.red.300.value}"
           }
         }
       },
       "gradient": {
         "green": {
           "start": {
-            "value": "{color.utility.green.200.value}",
-            "comment": "Start color for green gradient"
+            "value": "{color.utility.green.200.value}"
           },
           "end": {
-            "value": "{color.neutral.white.value}",
-            "comment": "End color for green gradient"
+            "value": "{color.neutral.white.value}"
           }
         },
         "yellow": {
           "start": {
-            "value": "{color.utility.yellow.200.value}",
-            "comment": "Start color for yellow gradient"
+            "value": "{color.utility.yellow.200.value}"
           },
           "end": {
-            "value": "{color.neutral.white.value}",
-            "comment": "End color for yellow gradient"
+            "value": "{color.neutral.white.value}"
           }
         },
         "red": {
           "start": {
-            "value": "{color.utility.red.200.value}",
-            "comment": "Start color for red gradient"
+            "value": "{color.utility.red.200.value}"
           },
           "end": {
-            "value": "{color.neutral.white.value}",
-            "comment": "End color for red gradient"
+            "value": "{color.neutral.white.value}"
           }
         }
       }
     },
     "border": {
-      "default": {
-        "value": "{color.neutral.200.value}",
-        "comment": "Default border color"
+      "base": {
+        "value": "{color.neutral.200.value}"
       },
       "input": {
         "default": {
-          "value": "{color.neutral.500.value}",
-          "comment": "Default input border color"
+          "value": "{color.neutral.500.value}"
         },
         "selected": {
-          "value": "{color.brand.700.value}",
-          "comment": "Selected input border color"
+          "value": "{color.brand.700.value}"
         },
         "assistive": {
-          "value": "{color.brand.200.value}",
-          "comment": "Assistive input border color"
+          "value": "{color.brand.200.value}"
         },
         "danger": {
-          "value": "{color.utility.red.600.value}",
-          "comment": "Danger input border color"
+          "value": "{color.utility.red.600.value}"
         },
         "muted": {
-          "value": "{color.neutral.300.value}",
-          "comment": "Muted input border color"
+          "value": "{color.neutral.300.value}"
         }
-      }
-    },
-    "overlay": {
-      "primary": {
-        "value": "#FFFFFF",
-        "comment": "Primary overlay color"
       }
     }
   }

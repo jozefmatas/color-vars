@@ -13,8 +13,8 @@ StyleDictionary.registerFilter({
   name: "isPrimitiveColor",
   matcher: function (token) {
     const isColor = token.type === "color" || token.path[0] === "color";
-    const isPrimitive =
-      token.original.value && token.original.value.startsWith("#");
+    const value = token.original.value?.value || token.original.value;
+    const isPrimitive = typeof value === "string" && value.startsWith("#");
     return isColor && isPrimitive;
   },
 });
@@ -24,8 +24,8 @@ StyleDictionary.registerFilter({
   name: "isSemanticColor",
   matcher: function (token) {
     const isColor = token.type === "color" || token.path[0] === "color";
-    const isSemantic =
-      token.original.value && !token.original.value.startsWith("#");
+    const value = token.original.value?.value || token.original.value;
+    const isSemantic = typeof value === "string" && !value.startsWith("#");
     return isColor && isSemantic;
   },
 });
