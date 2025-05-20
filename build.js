@@ -220,132 +220,121 @@ StyleDictionary.registerFormat({
   },
 });
 
-// Custom format for typography variables
+// Custom format for typography mixins
 StyleDictionary.registerFormat({
-  name: "scss/variables-typography",
+  name: "scss/typography-mixins",
   formatter: function ({ dictionary }) {
-    const groupedTokens = {};
+    const tokens = dictionary.allTokens;
+    // Add the fonts import at the top
+    let output = '// AUTO-GENERATED FILE. DO NOT EDIT.\n@import "./fonts";\n\n';
 
-    // Group tokens by their category (desktop/tablet/mobile)
-    dictionary.allTokens.forEach((token) => {
-      const path = token.path;
-      const category = path[1]; // desktop, tablet, or mobile
+    // Map font families to their variables
+    const fontFamilyMap = {
+      "Inter Variable, sans-serif": "$fontFamily-inter",
+      "P22 Mackinac Pro, sans-serif": "$fontFamily-mackinac",
+      "CommitMono, sans-serif": "$fontFamily-commit",
+    };
 
-      if (!groupedTokens[category]) {
-        groupedTokens[category] = [];
+    // Map font weights to their variables
+    const fontWeightMap = {
+      400: {
+        "Inter Variable, sans-serif": "$fontWeight-inter-regular",
+        "P22 Mackinac Pro, sans-serif": "$fontWeight-mackinac-book",
+        "CommitMono, sans-serif": "$fontWeight-commit-regular",
+      },
+      500: {
+        "Inter Variable, sans-serif": "$fontWeight-inter-medium",
+      },
+      600: {
+        "Inter Variable, sans-serif": "$fontWeight-inter-semibold",
+      },
+    };
+
+    // Helper function to resolve references
+    function resolveReference(val, currentToken) {
+      if (typeof val !== "string") return val;
+
+      // Handle font family
+      if (fontFamilyMap[val]) {
+        return fontFamilyMap[val];
       }
-      groupedTokens[category].push(token);
-    });
 
-    let output = "";
-
-    // Generate SCSS with grouped comments
-    Object.entries(groupedTokens).forEach(([category, tokens]) => {
-      const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
-      output += `// ------------------------------\n// ${categoryName} Typography\n// ------------------------------\n\n`;
-
-      // Group tokens by their style (heading/body/label)
-      const styleGroups = {};
-      tokens.forEach((token) => {
-        const style = token.path[2]; // heading, body, or label
-        if (!styleGroups[style]) {
-          styleGroups[style] = [];
+      // Handle font weight (needs context of font family)
+      if (currentToken.value.fontFamily && fontWeightMap[val]) {
+        const family = currentToken.value.fontFamily;
+        if (fontWeightMap[val][family]) {
+          return fontWeightMap[val][family];
         }
-        styleGroups[style].push(token);
-      });
+      }
 
-      Object.entries(styleGroups).forEach(([style, styleTokens]) => {
-        const styleName = style.charAt(0).toUpperCase() + style.slice(1);
-        output += `// ${styleName}\n`;
+      // For other values (fontSize, lineHeight, etc.), just return as is
+      return val;
+    }
 
-        styleTokens.forEach((token) => {
-          const name = `${token.path.join("-")}`;
-          const value = token.value;
+    // Generate mixin and class for each typography token
+    tokens.forEach((token) => {
+      // Remove 'scale-' from the name
+      const name = token.path.join("-").replace("scale-", "");
+      const value = token.value;
 
-          // Create a mixin for each typography style
-          output += `@mixin ${name} {\n`;
-          output += `  font-family: ${value.fontFamily};\n`;
-          output += `  font-size: ${value.fontSize};\n`;
-          output += `  font-weight: ${value.fontWeight};\n`;
-          output += `  line-height: ${value.lineHeight};\n`;
-          output += `  letter-spacing: ${value.letterSpacing};\n`;
-          if (value.textTransform) {
-            output += `  text-transform: ${value.textTransform};\n`;
-          }
-          output += `}\n\n`;
-        });
-      });
+      // Generate mixin
+      let mixin = `@mixin ${name} {\n`;
+      if (value.fontFamily)
+        mixin += `  font-family: ${resolveReference(value.fontFamily, token)};\n`;
+      if (value.fontSize)
+        mixin += `  font-size: ${resolveReference(value.fontSize, token)};\n`;
+      if (value.fontWeight)
+        mixin += `  font-weight: ${resolveReference(value.fontWeight, token)};\n`;
+      if (value.lineHeight)
+        mixin += `  line-height: ${resolveReference(value.lineHeight, token)};\n`;
+      if (value.letterSpacing)
+        mixin += `  letter-spacing: ${resolveReference(value.letterSpacing, token)};\n`;
+      if (value.textTransform)
+        mixin += `  text-transform: ${resolveReference(value.textTransform, token)};\n`;
+      mixin += `}\n\n`;
+
+      // Generate class
+      mixin += `.${name} { @include ${name}; }\n\n`;
+
+      output += mixin;
     });
 
     return output;
   },
 });
 
-const sd = StyleDictionary.extend({
+// Update the Style Dictionary configuration
+const StyleDictionaryExtended = StyleDictionary.extend({
   source: ["tokens/**/*.json"],
   platforms: {
-    css: {
-      transformGroup: "css",
-      buildPath: "build/css/",
-      files: [
-        {
-          destination: "variables.css",
-          format: "css/variables",
-          filter: "isColor",
-          options: {
-            showFileHeader: false,
-            outputReferences: true,
-          },
-        },
-      ],
-    },
     scss: {
-      transformGroup: "scss",
+      transforms: ["attribute/cti", "name/cti/kebab"],
       buildPath: "build/scss/",
       files: [
         {
-          destination: "colors/_primitives.scss",
-          filter: "isPrimitiveColor",
-          format: "scss/variables-primitive",
-          options: {
-            showFileHeader: false,
-            outputReferences: false,
-            themeable: false,
-          },
-        },
-        {
-          destination: "colors/_colors.scss",
-          filter: "isSemanticColor",
-          format: "scss/variables-with-comments",
-          options: {
-            showFileHeader: false,
-            outputReferences: true,
-            themeable: true,
-          },
-        },
-        {
-          destination: "colors/_gradients.scss",
-          filter: "isGradient",
-          format: "scss/variables-gradient",
-          options: {
-            showFileHeader: false,
-            outputReferences: false,
-            themeable: false,
-          },
-        },
-        {
           destination: "typography/_typography.scss",
+          format: "scss/typography-mixins",
           filter: "isTypography",
-          format: "scss/variables-typography",
-          options: {
-            showFileHeader: false,
-            outputReferences: false,
-            themeable: false,
-          },
+        },
+        {
+          destination: "colors/_semantic.scss",
+          format: "scss/variables-with-comments",
+          filter: "isSemanticColor",
+        },
+        {
+          destination: "colors/_primitives.scss",
+          format: "scss/variables-primitive",
+          filter: "isPrimitiveColor",
+        },
+        {
+          destination: "gradients/_gradients.scss",
+          format: "scss/variables-gradient",
+          filter: "isGradient",
         },
       ],
     },
   },
 });
 
-sd.buildAllPlatforms();
+// Run the build
+StyleDictionaryExtended.buildAllPlatforms();

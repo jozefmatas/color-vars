@@ -1,0 +1,10 @@
+@import "./primitives";
+
+// ------------------------------
+// Gradient Tokens
+// ------------------------------
+$gradient-body-green: linear-gradient(180deg, $utility-green-200 0%, $neutral-white 100%);
+
+$gradient-body-yellow: linear-gradient(180deg, $utility-yellow-200 0%, $neutral-white 100%);
+
+$gradient-body-red: linear-gradient(180deg, $utility-red-200 0%, $neutral-white 100%);
