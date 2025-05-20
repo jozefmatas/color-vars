@@ -38,6 +38,14 @@ StyleDictionary.registerFilter({
   },
 });
 
+// Register a custom filter for typography
+StyleDictionary.registerFilter({
+  name: "isTypography",
+  matcher: function (token) {
+    return token.type === "typography" || token.path[0] === "scale";
+  },
+});
+
 // Helper function to remove 'color-' prefix and format path
 function formatVariableName(path) {
   // Join the path parts with '-' but skip the first part if it's 'color'
@@ -212,6 +220,67 @@ StyleDictionary.registerFormat({
   },
 });
 
+// Custom format for typography variables
+StyleDictionary.registerFormat({
+  name: "scss/variables-typography",
+  formatter: function ({ dictionary }) {
+    const groupedTokens = {};
+
+    // Group tokens by their category (desktop/tablet/mobile)
+    dictionary.allTokens.forEach((token) => {
+      const path = token.path;
+      const category = path[1]; // desktop, tablet, or mobile
+
+      if (!groupedTokens[category]) {
+        groupedTokens[category] = [];
+      }
+      groupedTokens[category].push(token);
+    });
+
+    let output = "";
+
+    // Generate SCSS with grouped comments
+    Object.entries(groupedTokens).forEach(([category, tokens]) => {
+      const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
+      output += `// ------------------------------\n// ${categoryName} Typography\n// ------------------------------\n\n`;
+
+      // Group tokens by their style (heading/body/label)
+      const styleGroups = {};
+      tokens.forEach((token) => {
+        const style = token.path[2]; // heading, body, or label
+        if (!styleGroups[style]) {
+          styleGroups[style] = [];
+        }
+        styleGroups[style].push(token);
+      });
+
+      Object.entries(styleGroups).forEach(([style, styleTokens]) => {
+        const styleName = style.charAt(0).toUpperCase() + style.slice(1);
+        output += `// ${styleName}\n`;
+
+        styleTokens.forEach((token) => {
+          const name = `${token.path.join("-")}`;
+          const value = token.value;
+
+          // Create a mixin for each typography style
+          output += `@mixin ${name} {\n`;
+          output += `  font-family: ${value.fontFamily};\n`;
+          output += `  font-size: ${value.fontSize};\n`;
+          output += `  font-weight: ${value.fontWeight};\n`;
+          output += `  line-height: ${value.lineHeight};\n`;
+          output += `  letter-spacing: ${value.letterSpacing};\n`;
+          if (value.textTransform) {
+            output += `  text-transform: ${value.textTransform};\n`;
+          }
+          output += `}\n\n`;
+        });
+      });
+    });
+
+    return output;
+  },
+});
+
 const sd = StyleDictionary.extend({
   source: ["tokens/**/*.json"],
   platforms: {
@@ -222,6 +291,7 @@ const sd = StyleDictionary.extend({
         {
           destination: "variables.css",
           format: "css/variables",
+          filter: "isColor",
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -231,10 +301,10 @@ const sd = StyleDictionary.extend({
     },
     scss: {
       transformGroup: "scss",
-      buildPath: "build/scss/colors/",
+      buildPath: "build/scss/",
       files: [
         {
-          destination: "_primitives.scss",
+          destination: "colors/_primitives.scss",
           filter: "isPrimitiveColor",
           format: "scss/variables-primitive",
           options: {
@@ -244,7 +314,7 @@ const sd = StyleDictionary.extend({
           },
         },
         {
-          destination: "_colors.scss",
+          destination: "colors/_colors.scss",
           filter: "isSemanticColor",
           format: "scss/variables-with-comments",
           options: {
@@ -254,9 +324,19 @@ const sd = StyleDictionary.extend({
           },
         },
         {
-          destination: "_gradients.scss",
+          destination: "colors/_gradients.scss",
           filter: "isGradient",
           format: "scss/variables-gradient",
+          options: {
+            showFileHeader: false,
+            outputReferences: false,
+            themeable: false,
+          },
+        },
+        {
+          destination: "typography/_typography.scss",
+          filter: "isTypography",
+          format: "scss/variables-typography",
           options: {
             showFileHeader: false,
             outputReferences: false,

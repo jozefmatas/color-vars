@@ -1,5 +1,4 @@
 :root {
-  --sizing: [object Object];
   --color-utility-red-800: #2e130d;
   --color-utility-red-700: #6f3020;
   --color-utility-red-600: #9d442d;
@@ -136,7 +135,4 @@
   --color-content-neutral-disabled: var(--color-neutral-400);
   --color-content-neutral-muted: var(--color-neutral-600);
   --color-content-neutral-default: var(--color-neutral-800);
-  --gradient-body-red: linear-gradient(180deg, var(--color-background-gradient-red-start) 0%, var(--color-background-gradient-red-end) 100%);
-  --gradient-body-yellow: linear-gradient(180deg, var(--color-background-gradient-yellow-start) 0%, var(--color-background-gradient-yellow-end) 100%);
-  --gradient-body-green: linear-gradient(180deg, var(--color-background-gradient-green-start) 0%, var(--color-background-gradient-green-end) 100%);
 }

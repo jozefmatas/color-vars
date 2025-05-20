@@ -1,0 +1,984 @@
+// ------------------------------
+// Desktop Typography
+// ------------------------------
+
+// Heading
+@mixin scale-desktop-heading-serif-100 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -2.9px;
+}
+
+@mixin scale-desktop-heading-serif-200 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -1.9px;
+}
+
+@mixin scale-desktop-heading-serif-300 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -1.1px;
+}
+
+@mixin scale-desktop-heading-serif-400 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.9px;
+}
+
+@mixin scale-desktop-heading-serif-500 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+}
+
+@mixin scale-desktop-heading-sans-100 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: -2.88px;
+}
+
+@mixin scale-desktop-heading-sans-200 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -1.92px;
+}
+
+@mixin scale-desktop-heading-sans-300 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.96px;
+}
+
+@mixin scale-desktop-heading-sans-400 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+}
+
+@mixin scale-desktop-heading-sans-500 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-heading-sans-600 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-heading-sans-700 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.18px;
+}
+
+// Body
+@mixin scale-desktop-body-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-body-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-body-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-body-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-body-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-body-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-desktop-body-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-desktop-body-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-desktop-body-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-desktop-body-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-desktop-body-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-desktop-body-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+// Label
+@mixin scale-desktop-label-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-label-sans-100-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-label-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-desktop-label-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-label-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-label-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-desktop-label-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-desktop-label-sans-300-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-desktop-label-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-desktop-label-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-desktop-label-sans-400-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-desktop-label-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-desktop-label-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-desktop-label-sans-500-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-desktop-label-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-desktop-label-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+// ------------------------------
+// Tablet Typography
+// ------------------------------
+
+// Heading
+@mixin scale-tablet-heading-serif-100 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -1.9px;
+}
+
+@mixin scale-tablet-heading-serif-200 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -1.1px;
+}
+
+@mixin scale-tablet-heading-serif-300 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.9px;
+}
+
+@mixin scale-tablet-heading-serif-400 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+}
+
+@mixin scale-tablet-heading-serif-500 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-heading-sans-100 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -1.92px;
+}
+
+@mixin scale-tablet-heading-sans-200 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+}
+
+@mixin scale-tablet-heading-sans-300 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.96px;
+}
+
+@mixin scale-tablet-heading-sans-400 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+}
+
+@mixin scale-tablet-heading-sans-500 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-heading-sans-600 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-heading-sans-700 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.18px;
+}
+
+// Body
+@mixin scale-tablet-body-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-body-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-body-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-body-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-body-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-body-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-tablet-body-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-tablet-body-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-tablet-body-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-tablet-body-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-tablet-body-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-tablet-body-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+// Label
+@mixin scale-tablet-label-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-label-sans-100-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-label-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-tablet-label-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-label-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-label-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-tablet-label-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-tablet-label-sans-300-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-tablet-label-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-tablet-label-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-tablet-label-sans-400-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-tablet-label-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-tablet-label-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-tablet-label-sans-500-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-tablet-label-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-tablet-label-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+// ------------------------------
+// Mobile Typography
+// ------------------------------
+
+// Heading
+@mixin scale-mobile-heading-serif-100 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.96px;
+}
+
+@mixin scale-mobile-heading-serif-200 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.9px;
+}
+
+@mixin scale-mobile-heading-serif-300 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.8px;
+}
+
+@mixin scale-mobile-heading-serif-400 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-mobile-heading-serif-500 {
+  font-family: P22 Mackinac Pro, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-heading-sans-100 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.96px;
+}
+
+@mixin scale-mobile-heading-sans-200 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+}
+
+@mixin scale-mobile-heading-sans-300 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+}
+
+@mixin scale-mobile-heading-sans-400 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-mobile-heading-sans-500 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+@mixin scale-mobile-heading-sans-600 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-heading-sans-700 {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.18px;
+}
+
+// Body
+@mixin scale-mobile-body-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-body-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-body-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-body-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-body-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-body-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-mobile-body-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-mobile-body-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-mobile-body-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-mobile-body-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-mobile-body-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-mobile-body-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+// Label
+@mixin scale-mobile-label-sans-100-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-mobile-label-sans-100-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-mobile-label-sans-100-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+}
+
+@mixin scale-mobile-label-sans-200-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-label-sans-200-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-label-sans-200-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.26px;
+}
+
+@mixin scale-mobile-label-sans-300-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-mobile-label-sans-300-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-mobile-label-sans-300-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.18px;
+}
+
+@mixin scale-mobile-label-sans-400-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-mobile-label-sans-400-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-mobile-label-sans-400-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.09px;
+}
+
+@mixin scale-mobile-label-sans-500-regular {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-mobile-label-sans-500-medium {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-mobile-label-sans-500-heavy {
+  font-family: Inter Variable, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0.05px;
+}
+
+@mixin scale-mobile-label-mono-400 {
+  font-family: CommitMono, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
