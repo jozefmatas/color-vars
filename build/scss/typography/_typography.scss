@@ -1,984 +1,1205 @@
-// ------------------------------
-// Desktop Typography
-// ------------------------------
+// AUTO-GENERATED FILE. DO NOT EDIT.
 
-// Heading
-@mixin scale-desktop-heading-serif-100 {
-  font-family: P22 Mackinac Pro, sans-serif;
+@mixin desktop-heading-serif-100 {
+  font-family: $fontFamily-mackinac;
   font-size: 72px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 72px;
   letter-spacing: -2.9px;
 }
 
-@mixin scale-desktop-heading-serif-200 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.desktop-heading-serif-100 { @include desktop-heading-serif-100; }
+
+@mixin desktop-heading-serif-200 {
+  font-family: $fontFamily-mackinac;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 56px;
   letter-spacing: -1.9px;
 }
 
-@mixin scale-desktop-heading-serif-300 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.desktop-heading-serif-200 { @include desktop-heading-serif-200; }
+
+@mixin desktop-heading-serif-300 {
+  font-family: $fontFamily-mackinac;
   font-size: 38px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 44px;
   letter-spacing: -1.1px;
 }
 
-@mixin scale-desktop-heading-serif-400 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.desktop-heading-serif-300 { @include desktop-heading-serif-300; }
+
+@mixin desktop-heading-serif-400 {
+  font-family: $fontFamily-mackinac;
   font-size: 31px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 36px;
   letter-spacing: -0.9px;
 }
 
-@mixin scale-desktop-heading-serif-500 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.desktop-heading-serif-400 { @include desktop-heading-serif-400; }
+
+@mixin desktop-heading-serif-500 {
+  font-family: $fontFamily-mackinac;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 29px;
   letter-spacing: -0.8px;
 }
 
-@mixin scale-desktop-heading-sans-100 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-serif-500 { @include desktop-heading-serif-500; }
+
+@mixin desktop-heading-sans-100 {
+  font-family: $fontFamily-inter;
   font-size: 72px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 76px;
   letter-spacing: -2.88px;
 }
 
-@mixin scale-desktop-heading-sans-200 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-100 { @include desktop-heading-sans-100; }
+
+@mixin desktop-heading-sans-200 {
+  font-family: $fontFamily-inter;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 52px;
   letter-spacing: -1.92px;
 }
 
-@mixin scale-desktop-heading-sans-300 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-200 { @include desktop-heading-sans-200; }
+
+@mixin desktop-heading-sans-300 {
+  font-family: $fontFamily-inter;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 36px;
   letter-spacing: -0.96px;
 }
 
-@mixin scale-desktop-heading-sans-400 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-300 { @include desktop-heading-sans-300; }
+
+@mixin desktop-heading-sans-400 {
+  font-family: $fontFamily-inter;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 28px;
   letter-spacing: -0.72px;
 }
 
-@mixin scale-desktop-heading-sans-500 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-400 { @include desktop-heading-sans-400; }
+
+@mixin desktop-heading-sans-500 {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-heading-sans-600 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-500 { @include desktop-heading-sans-500; }
+
+@mixin desktop-heading-sans-600 {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 22px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-heading-sans-700 {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-600 { @include desktop-heading-sans-600; }
+
+@mixin desktop-heading-sans-700 {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.18px;
 }
 
-// Body
-@mixin scale-desktop-body-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-heading-sans-700 { @include desktop-heading-sans-700; }
+
+@mixin desktop-body-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 29px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-body-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-100-regular { @include desktop-body-sans-100-regular; }
+
+@mixin desktop-body-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 29px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-body-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-100-heavy { @include desktop-body-sans-100-heavy; }
+
+@mixin desktop-body-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-body-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-200-regular { @include desktop-body-sans-200-regular; }
+
+@mixin desktop-body-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-body-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-200-medium { @include desktop-body-sans-200-medium; }
+
+@mixin desktop-body-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-body-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-200-heavy { @include desktop-body-sans-200-heavy; }
+
+@mixin desktop-body-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-desktop-body-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-300-regular { @include desktop-body-sans-300-regular; }
+
+@mixin desktop-body-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-desktop-body-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-300-heavy { @include desktop-body-sans-300-heavy; }
+
+@mixin desktop-body-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-desktop-body-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-400-regular { @include desktop-body-sans-400-regular; }
+
+@mixin desktop-body-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-desktop-body-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-400-heavy { @include desktop-body-sans-400-heavy; }
+
+@mixin desktop-body-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-desktop-body-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-sans-500-regular { @include desktop-body-sans-500-regular; }
+
+@mixin desktop-body-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-desktop-body-mono-400 {
-  font-family: CommitMono, sans-serif;
+.desktop-body-sans-500-heavy { @include desktop-body-sans-500-heavy; }
+
+@mixin desktop-body-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 20px;
   letter-spacing: 0px;
 }
 
-// Label
-@mixin scale-desktop-label-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-body-mono-400 { @include desktop-body-mono-400; }
+
+@mixin desktop-label-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-label-sans-100-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-100-regular { @include desktop-label-sans-100-regular; }
+
+@mixin desktop-label-sans-100-medium {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-label-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-100-medium { @include desktop-label-sans-100-medium; }
+
+@mixin desktop-label-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-desktop-label-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-100-heavy { @include desktop-label-sans-100-heavy; }
+
+@mixin desktop-label-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-label-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-200-regular { @include desktop-label-sans-200-regular; }
+
+@mixin desktop-label-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-label-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-200-medium { @include desktop-label-sans-200-medium; }
+
+@mixin desktop-label-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-desktop-label-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-200-heavy { @include desktop-label-sans-200-heavy; }
+
+@mixin desktop-label-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-desktop-label-sans-300-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-300-regular { @include desktop-label-sans-300-regular; }
+
+@mixin desktop-label-sans-300-medium {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-desktop-label-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-300-medium { @include desktop-label-sans-300-medium; }
+
+@mixin desktop-label-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-desktop-label-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-300-heavy { @include desktop-label-sans-300-heavy; }
+
+@mixin desktop-label-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-desktop-label-sans-400-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-400-regular { @include desktop-label-sans-400-regular; }
+
+@mixin desktop-label-sans-400-medium {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-desktop-label-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-400-medium { @include desktop-label-sans-400-medium; }
+
+@mixin desktop-label-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-desktop-label-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-400-heavy { @include desktop-label-sans-400-heavy; }
+
+@mixin desktop-label-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-desktop-label-sans-500-medium {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-500-regular { @include desktop-label-sans-500-regular; }
+
+@mixin desktop-label-sans-500-medium {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-desktop-label-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.desktop-label-sans-500-medium { @include desktop-label-sans-500-medium; }
+
+@mixin desktop-label-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-desktop-label-mono-400 {
-  font-family: CommitMono, sans-serif;
+.desktop-label-sans-500-heavy { @include desktop-label-sans-500-heavy; }
+
+@mixin desktop-label-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 18px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
-// ------------------------------
-// Tablet Typography
-// ------------------------------
+.desktop-label-mono-400 { @include desktop-label-mono-400; }
 
-// Heading
-@mixin scale-tablet-heading-serif-100 {
-  font-family: P22 Mackinac Pro, sans-serif;
+@mixin tablet-heading-serif-100 {
+  font-family: $fontFamily-mackinac;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 56px;
   letter-spacing: -1.9px;
 }
 
-@mixin scale-tablet-heading-serif-200 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.tablet-heading-serif-100 { @include tablet-heading-serif-100; }
+
+@mixin tablet-heading-serif-200 {
+  font-family: $fontFamily-mackinac;
   font-size: 38px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 44px;
   letter-spacing: -1.1px;
 }
 
-@mixin scale-tablet-heading-serif-300 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.tablet-heading-serif-200 { @include tablet-heading-serif-200; }
+
+@mixin tablet-heading-serif-300 {
+  font-family: $fontFamily-mackinac;
   font-size: 31px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 36px;
   letter-spacing: -0.9px;
 }
 
-@mixin scale-tablet-heading-serif-400 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.tablet-heading-serif-300 { @include tablet-heading-serif-300; }
+
+@mixin tablet-heading-serif-400 {
+  font-family: $fontFamily-mackinac;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 29px;
   letter-spacing: -0.8px;
 }
 
-@mixin scale-tablet-heading-serif-500 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.tablet-heading-serif-400 { @include tablet-heading-serif-400; }
+
+@mixin tablet-heading-serif-500 {
+  font-family: $fontFamily-mackinac;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 24px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-heading-sans-100 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-serif-500 { @include tablet-heading-serif-500; }
+
+@mixin tablet-heading-sans-100 {
+  font-family: $fontFamily-inter;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 52px;
   letter-spacing: -1.92px;
 }
 
-@mixin scale-tablet-heading-sans-200 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-100 { @include tablet-heading-sans-100; }
+
+@mixin tablet-heading-sans-200 {
+  font-family: $fontFamily-inter;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 44px;
   letter-spacing: -1.6px;
 }
 
-@mixin scale-tablet-heading-sans-300 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-200 { @include tablet-heading-sans-200; }
+
+@mixin tablet-heading-sans-300 {
+  font-family: $fontFamily-inter;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 36px;
   letter-spacing: -0.96px;
 }
 
-@mixin scale-tablet-heading-sans-400 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-300 { @include tablet-heading-sans-300; }
+
+@mixin tablet-heading-sans-400 {
+  font-family: $fontFamily-inter;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 28px;
   letter-spacing: -0.72px;
 }
 
-@mixin scale-tablet-heading-sans-500 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-400 { @include tablet-heading-sans-400; }
+
+@mixin tablet-heading-sans-500 {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-heading-sans-600 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-500 { @include tablet-heading-sans-500; }
+
+@mixin tablet-heading-sans-600 {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 22px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-heading-sans-700 {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-600 { @include tablet-heading-sans-600; }
+
+@mixin tablet-heading-sans-700 {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.18px;
 }
 
-// Body
-@mixin scale-tablet-body-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-heading-sans-700 { @include tablet-heading-sans-700; }
+
+@mixin tablet-body-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 29px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-body-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-100-regular { @include tablet-body-sans-100-regular; }
+
+@mixin tablet-body-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 29px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-body-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-100-heavy { @include tablet-body-sans-100-heavy; }
+
+@mixin tablet-body-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-body-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-200-regular { @include tablet-body-sans-200-regular; }
+
+@mixin tablet-body-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-body-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-200-medium { @include tablet-body-sans-200-medium; }
+
+@mixin tablet-body-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-body-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-200-heavy { @include tablet-body-sans-200-heavy; }
+
+@mixin tablet-body-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-tablet-body-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-300-regular { @include tablet-body-sans-300-regular; }
+
+@mixin tablet-body-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-tablet-body-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-300-heavy { @include tablet-body-sans-300-heavy; }
+
+@mixin tablet-body-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-tablet-body-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-400-regular { @include tablet-body-sans-400-regular; }
+
+@mixin tablet-body-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-tablet-body-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-400-heavy { @include tablet-body-sans-400-heavy; }
+
+@mixin tablet-body-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-tablet-body-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-sans-500-regular { @include tablet-body-sans-500-regular; }
+
+@mixin tablet-body-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-tablet-body-mono-400 {
-  font-family: CommitMono, sans-serif;
+.tablet-body-sans-500-heavy { @include tablet-body-sans-500-heavy; }
+
+@mixin tablet-body-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 18px;
   letter-spacing: 0px;
 }
 
-// Label
-@mixin scale-tablet-label-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-body-mono-400 { @include tablet-body-mono-400; }
+
+@mixin tablet-label-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-label-sans-100-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-100-regular { @include tablet-label-sans-100-regular; }
+
+@mixin tablet-label-sans-100-medium {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-label-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-100-medium { @include tablet-label-sans-100-medium; }
+
+@mixin tablet-label-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-tablet-label-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-100-heavy { @include tablet-label-sans-100-heavy; }
+
+@mixin tablet-label-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-label-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-200-regular { @include tablet-label-sans-200-regular; }
+
+@mixin tablet-label-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-label-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-200-medium { @include tablet-label-sans-200-medium; }
+
+@mixin tablet-label-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-tablet-label-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-200-heavy { @include tablet-label-sans-200-heavy; }
+
+@mixin tablet-label-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-tablet-label-sans-300-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-300-regular { @include tablet-label-sans-300-regular; }
+
+@mixin tablet-label-sans-300-medium {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-tablet-label-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-300-medium { @include tablet-label-sans-300-medium; }
+
+@mixin tablet-label-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-tablet-label-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-300-heavy { @include tablet-label-sans-300-heavy; }
+
+@mixin tablet-label-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-tablet-label-sans-400-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-400-regular { @include tablet-label-sans-400-regular; }
+
+@mixin tablet-label-sans-400-medium {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-tablet-label-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-400-medium { @include tablet-label-sans-400-medium; }
+
+@mixin tablet-label-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-tablet-label-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-400-heavy { @include tablet-label-sans-400-heavy; }
+
+@mixin tablet-label-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-tablet-label-sans-500-medium {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-500-regular { @include tablet-label-sans-500-regular; }
+
+@mixin tablet-label-sans-500-medium {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-tablet-label-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.tablet-label-sans-500-medium { @include tablet-label-sans-500-medium; }
+
+@mixin tablet-label-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-tablet-label-mono-400 {
-  font-family: CommitMono, sans-serif;
+.tablet-label-sans-500-heavy { @include tablet-label-sans-500-heavy; }
+
+@mixin tablet-label-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 16px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
-// ------------------------------
-// Mobile Typography
-// ------------------------------
+.tablet-label-mono-400 { @include tablet-label-mono-400; }
 
-// Heading
-@mixin scale-mobile-heading-serif-100 {
-  font-family: P22 Mackinac Pro, sans-serif;
+@mixin mobile-heading-serif-100 {
+  font-family: $fontFamily-mackinac;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 36px;
   letter-spacing: -0.96px;
 }
 
-@mixin scale-mobile-heading-serif-200 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.mobile-heading-serif-100 { @include mobile-heading-serif-100; }
+
+@mixin mobile-heading-serif-200 {
+  font-family: $fontFamily-mackinac;
   font-size: 31px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 36px;
   letter-spacing: -0.9px;
 }
 
-@mixin scale-mobile-heading-serif-300 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.mobile-heading-serif-200 { @include mobile-heading-serif-200; }
+
+@mixin mobile-heading-serif-300 {
+  font-family: $fontFamily-mackinac;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 29px;
   letter-spacing: -0.8px;
 }
 
-@mixin scale-mobile-heading-serif-400 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.mobile-heading-serif-300 { @include mobile-heading-serif-300; }
+
+@mixin mobile-heading-serif-400 {
+  font-family: $fontFamily-mackinac;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 24px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-mobile-heading-serif-500 {
-  font-family: P22 Mackinac Pro, sans-serif;
+.mobile-heading-serif-400 { @include mobile-heading-serif-400; }
+
+@mixin mobile-heading-serif-500 {
+  font-family: $fontFamily-mackinac;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-mackinac-book;
   line-height: 22px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-heading-sans-100 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-serif-500 { @include mobile-heading-serif-500; }
+
+@mixin mobile-heading-sans-100 {
+  font-family: $fontFamily-inter;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 36px;
   letter-spacing: -0.96px;
 }
 
-@mixin scale-mobile-heading-sans-200 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-100 { @include mobile-heading-sans-100; }
+
+@mixin mobile-heading-sans-200 {
+  font-family: $fontFamily-inter;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 28px;
   letter-spacing: -0.72px;
 }
 
-@mixin scale-mobile-heading-sans-300 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-200 { @include mobile-heading-sans-200; }
+
+@mixin mobile-heading-sans-300 {
+  font-family: $fontFamily-inter;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 28px;
   letter-spacing: -0.72px;
 }
 
-@mixin scale-mobile-heading-sans-400 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-300 { @include mobile-heading-sans-300; }
+
+@mixin mobile-heading-sans-400 {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-mobile-heading-sans-500 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-400 { @include mobile-heading-sans-400; }
+
+@mixin mobile-heading-sans-500 {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 22px;
   letter-spacing: 0px;
 }
 
-@mixin scale-mobile-heading-sans-600 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-500 { @include mobile-heading-sans-500; }
+
+@mixin mobile-heading-sans-600 {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 22px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-heading-sans-700 {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-600 { @include mobile-heading-sans-600; }
+
+@mixin mobile-heading-sans-700 {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.18px;
 }
 
-// Body
-@mixin scale-mobile-body-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-heading-sans-700 { @include mobile-heading-sans-700; }
+
+@mixin mobile-body-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-body-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-100-regular { @include mobile-body-sans-100-regular; }
+
+@mixin mobile-body-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-body-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-100-heavy { @include mobile-body-sans-100-heavy; }
+
+@mixin mobile-body-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-body-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-200-regular { @include mobile-body-sans-200-regular; }
+
+@mixin mobile-body-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-body-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-200-medium { @include mobile-body-sans-200-medium; }
+
+@mixin mobile-body-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 26px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-body-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-200-heavy { @include mobile-body-sans-200-heavy; }
+
+@mixin mobile-body-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-mobile-body-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-300-regular { @include mobile-body-sans-300-regular; }
+
+@mixin mobile-body-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 24px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-mobile-body-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-300-heavy { @include mobile-body-sans-300-heavy; }
+
+@mixin mobile-body-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-mobile-body-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-400-regular { @include mobile-body-sans-400-regular; }
+
+@mixin mobile-body-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-mobile-body-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-400-heavy { @include mobile-body-sans-400-heavy; }
+
+@mixin mobile-body-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-mobile-body-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-sans-500-regular { @include mobile-body-sans-500-regular; }
+
+@mixin mobile-body-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-mobile-body-mono-400 {
-  font-family: CommitMono, sans-serif;
+.mobile-body-sans-500-heavy { @include mobile-body-sans-500-heavy; }
+
+@mixin mobile-body-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 20px;
   letter-spacing: 0px;
 }
 
-// Label
-@mixin scale-mobile-label-sans-100-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-body-mono-400 { @include mobile-body-mono-400; }
+
+@mixin mobile-label-sans-100-regular {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-mobile-label-sans-100-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-100-regular { @include mobile-label-sans-100-regular; }
+
+@mixin mobile-label-sans-100-medium {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-mobile-label-sans-100-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-100-medium { @include mobile-label-sans-100-medium; }
+
+@mixin mobile-label-sans-100-heavy {
+  font-family: $fontFamily-inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 20px;
   letter-spacing: -0.33px;
 }
 
-@mixin scale-mobile-label-sans-200-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-100-heavy { @include mobile-label-sans-100-heavy; }
+
+@mixin mobile-label-sans-200-regular {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-label-sans-200-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-200-regular { @include mobile-label-sans-200-regular; }
+
+@mixin mobile-label-sans-200-medium {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-label-sans-200-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-200-medium { @include mobile-label-sans-200-medium; }
+
+@mixin mobile-label-sans-200-heavy {
+  font-family: $fontFamily-inter;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 18px;
   letter-spacing: -0.26px;
 }
 
-@mixin scale-mobile-label-sans-300-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-200-heavy { @include mobile-label-sans-200-heavy; }
+
+@mixin mobile-label-sans-300-regular {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-mobile-label-sans-300-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-300-regular { @include mobile-label-sans-300-regular; }
+
+@mixin mobile-label-sans-300-medium {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-mobile-label-sans-300-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-300-medium { @include mobile-label-sans-300-medium; }
+
+@mixin mobile-label-sans-300-heavy {
+  font-family: $fontFamily-inter;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 16px;
   letter-spacing: -0.18px;
 }
 
-@mixin scale-mobile-label-sans-400-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-300-heavy { @include mobile-label-sans-300-heavy; }
+
+@mixin mobile-label-sans-400-regular {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-mobile-label-sans-400-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-400-regular { @include mobile-label-sans-400-regular; }
+
+@mixin mobile-label-sans-400-medium {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-mobile-label-sans-400-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-400-medium { @include mobile-label-sans-400-medium; }
+
+@mixin mobile-label-sans-400-heavy {
+  font-family: $fontFamily-inter;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 14px;
   letter-spacing: -0.09px;
 }
 
-@mixin scale-mobile-label-sans-500-regular {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-400-heavy { @include mobile-label-sans-400-heavy; }
+
+@mixin mobile-label-sans-500-regular {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: $fontWeight-inter-regular;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-mobile-label-sans-500-medium {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-500-regular { @include mobile-label-sans-500-regular; }
+
+@mixin mobile-label-sans-500-medium {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: $fontWeight-inter-medium;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-mobile-label-sans-500-heavy {
-  font-family: Inter Variable, sans-serif;
+.mobile-label-sans-500-medium { @include mobile-label-sans-500-medium; }
+
+@mixin mobile-label-sans-500-heavy {
+  font-family: $fontFamily-inter;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $fontWeight-inter-semibold;
   line-height: 11px;
   letter-spacing: 0.05px;
 }
 
-@mixin scale-mobile-label-mono-400 {
-  font-family: CommitMono, sans-serif;
+.mobile-label-sans-500-heavy { @include mobile-label-sans-500-heavy; }
+
+@mixin mobile-label-mono-400 {
+  font-family: $fontFamily-commit;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontWeight-commit-regular;
   line-height: 18px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
+
+.mobile-label-mono-400 { @include mobile-label-mono-400; }
 
