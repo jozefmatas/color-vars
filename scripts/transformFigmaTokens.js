@@ -7,7 +7,7 @@ const variables = JSON.parse(fs.readFileSync(variablesPath, "utf8"));
 
 // Transform color tokens
 function transformColors(variables) {
-  const colors = variables.colors.mode1;
+  const colors = variables.colors["mode-1"];
   const result = {
     color: {
       neutral: {},
@@ -29,16 +29,16 @@ function transformColors(variables) {
 
   // Process neutral colors
   Object.entries(colors).forEach(([key, value]) => {
-    if (key.startsWith("neutral")) {
-      const scale = key.replace("neutral", "").toLowerCase();
+    if (key.startsWith("neutral-")) {
+      const scale = key.replace("neutral-", "").toLowerCase();
       result.color.neutral[scale] = { value };
     }
   });
 
   // Process brand colors
   Object.entries(colors).forEach(([key, value]) => {
-    if (key.startsWith("brand")) {
-      const scale = key.replace("brand", "").toLowerCase();
+    if (key.startsWith("brand-")) {
+      const scale = key.replace("brand-", "").toLowerCase();
       result.color.brand[scale] = { value };
     }
   });
@@ -47,12 +47,9 @@ function transformColors(variables) {
   const accentTypes = ["sage", "desert", "thistle", "periwinkle", "mist"];
   accentTypes.forEach((type) => {
     Object.entries(colors).forEach(([key, value]) => {
-      if (
-        key.startsWith(`accent${type.charAt(0).toUpperCase() + type.slice(1)}`)
-      ) {
-        const scale = key
-          .replace(`accent${type.charAt(0).toUpperCase() + type.slice(1)}`, "")
-          .toLowerCase();
+      const prefix = `accent-${type}-`;
+      if (key.startsWith(prefix)) {
+        const scale = key.replace(prefix, "").toLowerCase();
         result.color.accent[type][scale] = { value };
       }
     });
@@ -62,12 +59,9 @@ function transformColors(variables) {
   const utilityTypes = ["green", "yellow", "red"];
   utilityTypes.forEach((type) => {
     Object.entries(colors).forEach(([key, value]) => {
-      if (
-        key.startsWith(`utility${type.charAt(0).toUpperCase() + type.slice(1)}`)
-      ) {
-        const scale = key
-          .replace(`utility${type.charAt(0).toUpperCase() + type.slice(1)}`, "")
-          .toLowerCase();
+      const prefix = `utility-${type}-`;
+      if (key.startsWith(prefix)) {
+        const scale = key.replace(prefix, "").toLowerCase();
         result.color.utility[type][scale] = { value };
       }
     });
@@ -78,7 +72,7 @@ function transformColors(variables) {
 
 // Transform semantic tokens
 function transformSemanticTokens(variables) {
-  const colors = variables.colors.mode1;
+  const colors = variables.colors["mode-1"];
   const result = {
     color: {
       content: {
